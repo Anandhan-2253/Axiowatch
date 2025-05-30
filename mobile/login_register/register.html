@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="register-form">
+         <div class="text">
+            REGISTER
+         </div>
+         <form action="register.php" method="post">
+            <div class="field">
+               <div class="fas fa-user"></div>
+               <input type="text" placeholder="Name" name="name" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-user-circle"></div>
+               <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-envelope"></div>
+               <input type="email" placeholder="Email" name="email" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-phone"></div>
+               <input type="tel" placeholder="Phone" name="phone" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-lock"></div>
+               <input type="password" placeholder="Password" name="password" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-lock"></div>
+               <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+            </div>
+            <div class="field">
+               <div class="fas fa-key"></div>
+               <input type="text" placeholder="4-digit PIN" name="pin" pattern="\d{4}" maxlength="4" required>
+            </div>
+            <button>REGISTER</button>
+            <div class="link">
+               Already a member?
+               <a href="login.html">Login Now</a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
