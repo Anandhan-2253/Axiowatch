@@ -1,0 +1,164 @@
+body {
+    font-family: 'Kode Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #3b3838;
+    color: #9c8989;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 a {
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.nav{
+    position: absolute;
+    right: 100px;
+}
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px
+}
+
+.nav a:hover{
+    transition: 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+    color: #333;
+    background-color: #f1f1f1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.marquee {
+    background-color: #141313;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.mr-abt {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 25px;
+    width: 80%;
+    max-width: 700px;
+    color: #fff;
+    gap: 20px;
+}
+
+.mr-abt .mr-abt-item {
+    flex: 1;
+    margin: 0 10px; /* Add horizontal margin between items */
+}
+
+.mr-abt .more-abt {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.mr-abt .more-abt1 {
+    color: #fff;
+}
+
+.about, .footer {
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.about h2{
+    margin-right: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+.ftr {
+    background-color: #141313;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70px; /* Add height for proper alignment */
+}
+
+.cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the content div takes full width */
+}
