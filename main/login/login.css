@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#151515, #222222);
+    font-family: "Poppins", sans-serif;
+    color: #c7c7c7;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 80vh;
+    background: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-side, .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side {
+    background: linear-gradient(#1b1b1b, #2c2c2c);
+    padding: 40px;
+    color: #339933;
+    text-align: center;
+    position: relative;
+}
+
+.left-side h2 {
+    margin: 0;
+    font-size: 48px;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #339933;
+    display: inline;
+}
+
+.left-side p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #339933; }
+}
+
+.right-side {
+    background: #1b1b1b;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side h2 {
+    color: #339933;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.right-side label {
+    font-size: 18px;
+    color: #c7c7c7;
+}
+
+.right-side input[type="text"],
+.right-side input[type="password"] {
+    width: 94%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: linear-gradient(#333, #222);
+    color: #c7c7c7;
+    font-size: 18px;
+}
+
+.right-side input[type="text"]:focus,
+.right-side input[type="password"]:focus {
+    border-color: #339933;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3);
+    background: linear-gradient(#333933, #222922);
+}
+
+.right-side input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    border: 1px solid #339933;
+    border-radius: 5px;
+    background: linear-gradient(#333933, #222922);
+    color: #c7c7c7;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.right-side input[type="submit"]:hover {
+    color: #339933;
+    box-shadow: 0 0 5px rgba(0, 255, 0, .3),
+                0 0 10px rgba(0, 255, 0, .2),
+                0 0 15px rgba(0, 255, 0, .1);
+}
