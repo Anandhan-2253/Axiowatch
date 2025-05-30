@@ -1,1 +1,1 @@
-Image files are in this folder
+Images are in this folder
